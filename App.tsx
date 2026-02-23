@@ -251,7 +251,7 @@ const App: React.FC = () => {
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img src="https://i.imgur.com/vdpqDcP.png" alt="Logo" className="h-10 w-10 object-contain rounded-lg bg-white p-1" />
-            <h1 className="text-xl font-bold tracking-tight">APLIKASI RPP KKG JATINAGARA</h1>
+            <h1 className="text-xl font-bold tracking-tight">APLIKASI RPP KKG MI</h1>
           </div>
           <div className="hidden md:flex items-center gap-6">
             <span className="text-sm font-medium opacity-90">Generator RPMBC</span>
