@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 min-h-screen text-slate-900;
+  }
+}
+
+@layer components {
+  .gradient-bg {
+    background: radial-gradient(circle, #f0fdf4 0%, #dcfce7 50%, #bbf7d0 100%);
+  }
+  .green-primary {
+    background-color: #064e3b;
+  }
+  .green-gradient {
+    background: linear-gradient(to right, #064e3b, #4ade80, #064e3b);
+  }
+}
+
+@media print {
+  .no-print { display: none !important; }
+  .print-page { padding: 0 !important; margin: 0 !important; }
+  .page-break { page-break-after: always; }
+}
