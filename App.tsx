@@ -1,10 +1,10 @@
-
+import { HOME_URL } from './constants';
 import React, { useState } from 'react';
 import { RPPData, GeneratedContent } from './types';
 import { MODEL_PEMBELAJARAN, METODE_PEMBELAJARAN, DIMENSI_PROFIL, PANCA_CINTA } from './constants';
 import Groq from "groq-sdk";
-import { Search, Loader2, Download, ChevronRight, ChevronLeft, CheckCircle2, FileText } from 'lucide-react';
-
+import { Search, Loader2, Download, ChevronRight, ChevronLeft, CheckCircle2, FileText, Home } from 'lucide-react';
+import { HOME_URL } from './constants';
 const App: React.FC = () => {
   const [step, setStep] = useState(1);
   const [loading, setLoading] = useState(false);
@@ -249,6 +249,13 @@ const App: React.FC = () => {
     <div className="flex flex-col min-h-screen">
       <header className="sticky top-0 z-50 green-gradient text-white shadow-lg no-print">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+          <a 
+      href={HOME_URL} 
+      className="p-2 rounded-lg hover:bg-white/10 transition-colors flex items-center gap-2 group mr-2"
+      title="Halaman Utama"
+    >
+      <Home className="w-6 h-6 group-hover:scale-110 transition-transform" />
+    </a>
           <div className="flex items-center gap-3">
             <img src="https://i.imgur.com/vdpqDcP.png" alt="Logo" className="h-10 w-10 object-contain rounded-lg bg-white p-1" />
             <h1 className="text-xl font-bold tracking-tight">APLIKASI RPP KKG MI</h1>
